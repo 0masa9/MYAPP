@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ナビバーの下、残り全部を地図に */
+#map {
+  width: 100%;
+  height: calc(100vh - 56px); /* navbar 高さ分を引く (標準で56px) */
+}
+
+/* スマホでもナビバーが潰れないように少しだけ調整 */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
