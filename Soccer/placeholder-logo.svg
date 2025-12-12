@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e88e5"/>
+      <stop offset="100%" stop-color="#e53935"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="220" height="220" rx="24" ry="24" fill="url(#grad)" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="120" cy="90" r="36" fill="#ffffff" opacity="0.9"/>
+  <path d="M120 60 L138 105 L102 105 Z" fill="#1e88e5"/>
+  <rect x="74" y="128" width="92" height="56" rx="8" ry="8" fill="#ffffff" opacity="0.9"/>
+  <text x="120" y="165" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700" fill="#333" text-anchor="middle">TEAM</text>
+</svg>

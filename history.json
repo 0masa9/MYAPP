@@ -1,0 +1,34 @@
+[
+  {
+    "clubId": 1,
+    "seasons": [
+      { "year": 2023, "league": "J1", "rank": 4 },
+      { "year": 2022, "league": "J1", "rank": 2 },
+      { "year": 2021, "league": "J1", "rank": 9 }
+    ]
+  },
+  {
+    "clubId": 2,
+    "seasons": [
+      { "year": 2023, "league": "J1", "rank": 5 },
+      { "year": 2022, "league": "J1", "rank": 9 },
+      { "year": 2021, "league": "J1", "rank": 6 }
+    ]
+  },
+  {
+    "clubId": 8,
+    "seasons": [
+      { "year": 2023, "league": "J1", "rank": 1 },
+      { "year": 2022, "league": "J1", "rank": 3 },
+      { "year": 2021, "league": "J1", "rank": 1 }
+    ]
+  },
+  {
+    "clubId": 24,
+    "seasons": [
+      { "year": 2023, "league": "J2", "rank": 2 },
+      { "year": 2022, "league": "J1", "rank": 16 },
+      { "year": 2021, "league": "J1", "rank": 10 }
+    ]
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "league": "J1",
+    "club": "鹿島アントラーズ",
+    "stadiumName": "カシマサッカースタジアム",
+    "officialUrl": "https://example.com/club/1",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。堅い守備と勝負強さで知られ、数多くのタイトルを獲得してきた伝統あるチームです。"
+  },
+  {
+    "id": 2,
+    "league": "J1",
+    "club": "浦和レッズ",
+    "stadiumName": "埼玉スタジアム2002",
+    "officialUrl": "https://example.com/club/2",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。国内屈指の動員力を誇るサポーターとともに、熱量の高いホームゲームが特徴です。"
+  },
+  {
+    "id": 3,
+    "league": "J1",
+    "club": "柏レイソル",
+    "stadiumName": "三協フロンテア柏スタジアム",
+    "officialUrl": "https://example.com/club/3",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。攻撃的なサッカーと若手育成にも定評があり、コンパクトなスタジアムの雰囲気も魅力です。"
+  },
+  {
+    "id": 4,
+    "league": "J1",
+    "club": "FC東京",
+    "stadiumName": "味の素スタジアム",
+    "officialUrl": "https://example.com/club/4",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。バランスの取れたスタイルで、首都クラブとして多くのファンに親しまれています。"
+  },
+  {
+    "id": 5,
+    "league": "J1",
+    "club": "東京ヴェルディ",
+    "stadiumName": "味の素スタジアム",
+    "officialUrl": "https://example.com/club/5",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。日本サッカーの草創期から歴史を持ち、育成力とテクニカルなスタイルで知られています。"
+  },
+  {
+    "id": 6,
+    "league": "J1",
+    "club": "FC町田ゼルビア",
+    "stadiumName": "町田GIONスタジアム",
+    "officialUrl": "https://example.com/club/6",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。コンパクトなスタジアムと一体感ある応援が特徴の成長著しいチームです。"
+  },
+  {
+    "id": 7,
+    "league": "J1",
+    "club": "川崎フロンターレ",
+    "stadiumName": "Uvanceとどろきスタジアム by Fujitsu",
+    "officialUrl": "https://example.com/club/7",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。ポゼッション重視の攻撃的なサッカーで近年多くのタイトルを獲得しています。"
+  },
+  {
+    "id": 8,
+    "league": "J1",
+    "club": "横浜F・マリノス",
+    "stadiumName": "日産スタジアム",
+    "officialUrl": "https://example.com/club/8",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。アグレッシブな攻撃スタイルと華やかなクラブカラーで人気の高いチームです。"
+  },
+  {
+    "id": 9,
+    "league": "J1",
+    "club": "横浜FC",
+    "stadiumName": "ニッパツ三ツ沢球技場",
+    "officialUrl": "https://example.com/club/9",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。歴史あるサッカー専用スタジアムを本拠地とし、地域密着の運営を行っています。"
+  },
+  {
+    "id": 10,
+    "league": "J1",
+    "club": "湘南ベルマーレ",
+    "stadiumName": "レモンガススタジアム平塚",
+    "officialUrl": "https://example.com/club/10",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。運動量豊富なフットボールと、湘南地域に根ざしたクラブ運営が特徴です。"
+  },
+  {
+    "id": 11,
+    "league": "J1",
+    "club": "アルビレックス新潟",
+    "stadiumName": "デンカビッグスワンスタジアム",
+    "officialUrl": "https://example.com/club/11",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。大きなスタジアムとオレンジのサポーターがつくる雰囲気が魅力です。"
+  },
+  {
+    "id": 12,
+    "league": "J1",
+    "club": "清水エスパルス",
+    "stadiumName": "IAIスタジアム日本平",
+    "officialUrl": "https://example.com/club/12",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。サッカー熱の高い地域をホームとし、長年Jリーグを支えてきた存在です。"
+  },
+  {
+    "id": 13,
+    "league": "J1",
+    "club": "名古屋グランパス",
+    "stadiumName": "豊田スタジアム",
+    "officialUrl": "https://example.com/club/13",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。テクニカルな選手が多く在籍し、大型スタジアムでのホームゲームが魅力です。"
+  },
+  {
+    "id": 14,
+    "league": "J1",
+    "club": "京都サンガF.C.",
+    "stadiumName": "サンガスタジアム by KYOCERA",
+    "officialUrl": "https://example.com/club/14",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。新スタジアムを拠点に、地域とともにクラブの新しい歴史を築いています。"
+  },
+  {
+    "id": 15,
+    "league": "J1",
+    "club": "ガンバ大阪",
+    "stadiumName": "パナソニックスタジアム吹田",
+    "officialUrl": "https://example.com/club/15",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。近代的な専用スタジアムと、攻撃的なサッカーで知られる強豪です。"
+  },
+  {
+    "id": 16,
+    "league": "J1",
+    "club": "セレッソ大阪",
+    "stadiumName": "ヨドコウ桜スタジアム",
+    "officialUrl": "https://example.com/club/16",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。若手育成にも力を入れ、華やかな攻撃陣で魅力的なゲームを見せます。"
+  },
+  {
+    "id": 17,
+    "league": "J1",
+    "club": "ヴィッセル神戸",
+    "stadiumName": "ノエビアスタジアム神戸",
+    "officialUrl": "https://example.com/club/17",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。世界的な選手が在籍したことでも知られ、高い注目を集めるチームです。"
+  },
+  {
+    "id": 18,
+    "league": "J1",
+    "club": "ファジアーノ岡山",
+    "stadiumName": "シティライトスタジアム",
+    "officialUrl": "https://example.com/club/18",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。地域密着を掲げ、岡山のサッカー文化を盛り上げています。"
+  },
+  {
+    "id": 19,
+    "league": "J1",
+    "club": "サンフレッチェ広島",
+    "stadiumName": "エディオンピースウイング広島",
+    "officialUrl": "https://example.com/club/19",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。組織的な守備と連動した攻撃で、安定した成績を残しているチームです。"
+  },
+  {
+    "id": 20,
+    "league": "J1",
+    "club": "アビスパ福岡",
+    "stadiumName": "ベスト電器スタジアム",
+    "officialUrl": "https://example.com/club/20",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J1リーグに所属するクラブ。堅守速攻スタイルと熱い応援でホームゲームを盛り上げています。"
+  },
+  {
+    "id": 21,
+    "league": "J2",
+    "club": "ブラウブリッツ秋田",
+    "stadiumName": "ソユースタジアム",
+    "officialUrl": "https://example.com/club/21",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。粘り強い守備とハードワークで存在感を示しています。"
+  },
+  {
+    "id": 22,
+    "league": "J2",
+    "club": "愛媛FC",
+    "stadiumName": "ニンジニアスタジアム",
+    "officialUrl": "https://example.com/club/22",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。地域とのつながりを大切にしながら、上位進出を狙っています。"
+  },
+  {
+    "id": 23,
+    "league": "J2",
+    "club": "藤枝MYFC",
+    "stadiumName": "藤枝総合運動公園サッカー場",
+    "officialUrl": "https://example.com/club/23",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。静岡県中部をホームとし、攻守にアグレッシブなサッカーを見せます。"
+  },
+  {
+    "id": 24,
+    "league": "J2",
+    "club": "北海道コンサドーレ札幌",
+    "stadiumName": "札幌ドーム",
+    "officialUrl": "https://example.com/club/24",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブとして登録されていますが、カテゴリーに応じて柔軟に変更できる想定です。"
+  },
+  {
+    "id": 25,
+    "league": "J2",
+    "club": "FC今治",
+    "stadiumName": "アシックス里山スタジアム",
+    "officialUrl": "https://example.com/club/25",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。新しいスタジアムを拠点に、クラブとしての成長を続けています。"
+  },
+  {
+    "id": 26,
+    "league": "J2",
+    "club": "いわきFC",
+    "stadiumName": "ハワイアンズスタジアムいわき",
+    "officialUrl": "https://example.com/club/26",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。フィジカルを生かしたスタイルで、一体感ある戦いぶりが特徴です。"
+  },
+  {
+    "id": 27,
+    "league": "J2",
+    "club": "ジェフユナイテッド千葉",
+    "stadiumName": "フクダ電子アリーナ",
+    "officialUrl": "https://example.com/club/27",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。古くからJリーグを支えてきたクラブで、J1復帰を目指して戦っています。"
+  },
+  {
+    "id": 28,
+    "league": "J2",
+    "club": "ジュビロ磐田",
+    "stadiumName": "ヤマハスタジアム（磐田）",
+    "officialUrl": "https://example.com/club/28",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。テクニカルな選手が多く、サッカー専用スタジアムも大きな魅力です。"
+  },
+  {
+    "id": 29,
+    "league": "J2",
+    "club": "カターレ富山",
+    "stadiumName": "富山県総合運動公園陸上競技場",
+    "officialUrl": "https://example.com/club/29",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。北陸地域を代表するクラブとして、上位進出を狙っています。"
+  },
+  {
+    "id": 30,
+    "league": "J2",
+    "club": "水戸ホーリーホック",
+    "stadiumName": "ケーズデンキスタジアム水戸",
+    "officialUrl": "https://example.com/club/30",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。堅実な戦いぶりとアカデミー育成にも注力しています。"
+  },
+  {
+    "id": 31,
+    "league": "J2",
+    "club": "モンテディオ山形",
+    "stadiumName": "NDソフトスタジアム山形",
+    "officialUrl": "https://example.com/club/31",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。寒冷地ならではの環境にも負けないハードワークが持ち味です。"
+  },
+  {
+    "id": 32,
+    "league": "J2",
+    "club": "大分トリニータ",
+    "stadiumName": "レゾナックドーム大分",
+    "officialUrl": "https://example.com/club/32",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。九州エリアで存在感を示し、J1復帰を目指して戦います。"
+  },
+  {
+    "id": 33,
+    "league": "J2",
+    "club": "大宮アルディージャ",
+    "stadiumName": "NACK5スタジアム大宮",
+    "officialUrl": "https://example.com/club/33",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。コンパクトな専用スタジアムで熱いサポーターの声援を受けています。"
+  },
+  {
+    "id": 34,
+    "league": "J2",
+    "club": "レノファ山口FC",
+    "stadiumName": "維新みらいふスタジアム",
+    "officialUrl": "https://example.com/club/34",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。山口県をホームタウンとし、粘り強い戦いを見せます。"
+  },
+  {
+    "id": 35,
+    "league": "J2",
+    "club": "ロアッソ熊本",
+    "stadiumName": "えがお健康スタジアム",
+    "officialUrl": "https://example.com/club/35",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。熊本のサッカー熱を背負い、攻守にアグレッシブな姿勢で臨みます。"
+  },
+  {
+    "id": 36,
+    "league": "J2",
+    "club": "サガン鳥栖",
+    "stadiumName": "駅前不動産スタジアム",
+    "officialUrl": "https://example.com/club/36",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。駅前に位置するスタジアムで、アクセスの良さも魅力です。"
+  },
+  {
+    "id": 37,
+    "league": "J2",
+    "club": "徳島ヴォルティス",
+    "stadiumName": "鳴門・大塚スポーツパーク ポカリスエットスタジアム",
+    "officialUrl": "https://example.com/club/37",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。四国からJ1復帰を狙う存在として、攻守に渡ってアグレッシブに戦います。"
+  },
+  {
+    "id": 38,
+    "league": "J2",
+    "club": "V・ファーレン長崎",
+    "stadiumName": "PEACE STADIUM Connected by SoftBank",
+    "officialUrl": "https://example.com/club/38",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。長崎らしい平和発信のコンセプトも掲げたクラブとして知られています。"
+  },
+  {
+    "id": 39,
+    "league": "J2",
+    "club": "ベガルタ仙台",
+    "stadiumName": "ユアテックスタジアム仙台",
+    "officialUrl": "https://example.com/club/39",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。熱心なサポーターが多く、スタジアムの一体感ある応援が魅力です。"
+  },
+  {
+    "id": 40,
+    "league": "J2",
+    "club": "ヴァンフォーレ甲府",
+    "stadiumName": "JITリサイクルインクスタジアム",
+    "officialUrl": "https://example.com/club/40",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J2リーグに所属するクラブ。山梨県を拠点に、堅実なチーム作りで上位を狙います。"
+  },
+  {
+    "id": 41,
+    "league": "J3",
+    "club": "アスルクラロ沼津",
+    "stadiumName": "愛鷹広域公園多目的競技場",
+    "officialUrl": "https://example.com/club/41",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。静岡県東部をホームタウンとし、地域密着でクラブ運営を行っています。"
+  },
+  {
+    "id": 42,
+    "league": "J3",
+    "club": "福島ユナイテッドFC",
+    "stadiumName": "とうほう・みんなのスタジアム",
+    "officialUrl": "https://example.com/club/42",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。復興のシンボルとしての側面も持ち、地元に愛される存在です。"
+  },
+  {
+    "id": 43,
+    "league": "J3",
+    "club": "ガイナーレ鳥取",
+    "stadiumName": "Axisバードスタジアム",
+    "officialUrl": "https://example.com/club/43",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。山陰エリアを代表するクラブとして、着実な成長を続けています。"
+  },
+  {
+    "id": 44,
+    "league": "J3",
+    "club": "FC岐阜",
+    "stadiumName": "岐阜メモリアルセンター長良川競技場",
+    "officialUrl": "https://example.com/club/44",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。長良川のほとりにあるスタジアムを本拠地とし、J2昇格を目指します。"
+  },
+  {
+    "id": 45,
+    "league": "J3",
+    "club": "ギラヴァンツ北九州",
+    "stadiumName": "ミクニワールドスタジアム北九州",
+    "officialUrl": "https://example.com/club/45",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。駅近スタジアムとして有名で、臨場感あふれる応援が魅力です。"
+  },
+  {
+    "id": 46,
+    "league": "J3",
+    "club": "鹿児島ユナイテッドFC",
+    "stadiumName": "白波スタジアム",
+    "officialUrl": "https://example.com/club/46",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。鹿児島の熱いサポーターに支えられ、上位進出を狙っています。"
+  },
+  {
+    "id": 47,
+    "league": "J3",
+    "club": "カマタマーレ讃岐",
+    "stadiumName": "Pikaraスタジアム",
+    "officialUrl": "https://example.com/club/47",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。香川県をホームタウンとし、地域密着のクラブ運営を行っています。"
+  },
+  {
+    "id": 48,
+    "league": "J3",
+    "club": "高知ユナイテッドSC",
+    "stadiumName": "高知県立春野総合運動公園陸上競技場",
+    "officialUrl": "https://example.com/club/48",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。四国の新勢力として、カテゴリー定着とその先を目指しています。"
+  },
+  {
+    "id": 49,
+    "league": "J3",
+    "club": "松本山雅FC",
+    "stadiumName": "サンプロ アルウィン",
+    "officialUrl": "https://example.com/club/49",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。アルプスの山々を望むスタジアムと熱心なサポーターで知られています。"
+  },
+  {
+    "id": 50,
+    "league": "J3",
+    "club": "AC長野パルセイロ",
+    "stadiumName": "長野Uスタジアム",
+    "officialUrl": "https://example.com/club/50",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。長野県を拠点に、攻守にバランスの取れたサッカーを展開します。"
+  },
+  {
+    "id": 51,
+    "league": "J3",
+    "club": "奈良クラブ",
+    "stadiumName": "ロートフィールド奈良",
+    "officialUrl": "https://example.com/club/51",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。歴史ある街をホームに、クラブとしての歴史を刻んでいます。"
+  },
+  {
+    "id": 52,
+    "league": "J3",
+    "club": "FC大阪",
+    "stadiumName": "東大阪市花園ラグビー場",
+    "officialUrl": "https://example.com/club/52",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。ラグビー場を本拠地としつつ、独自のサッカースタイルを築いています。"
+  },
+  {
+    "id": 53,
+    "league": "J3",
+    "club": "FC琉球",
+    "stadiumName": "タピック県総ひやごんスタジアム",
+    "officialUrl": "https://example.com/club/53",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。沖縄らしい明るい雰囲気の中で、攻撃的なサッカーを志向します。"
+  },
+  {
+    "id": 54,
+    "league": "J3",
+    "club": "SC相模原",
+    "stadiumName": "相模原ギオンスタジアム",
+    "officialUrl": "https://example.com/club/54",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。首都圏のクラブとして、地域に根ざした活動を続けています。"
+  },
+  {
+    "id": 55,
+    "league": "J3",
+    "club": "テゲバジャーロ宮崎",
+    "stadiumName": "いちご宮崎新富サッカー場",
+    "officialUrl": "https://example.com/club/55",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。九州南部からJリーグの舞台で存在感を高めています。"
+  },
+  {
+    "id": 56,
+    "league": "J3",
+    "club": "ザスパ群馬",
+    "stadiumName": "正田醤油スタジアム群馬",
+    "officialUrl": "https://example.com/club/56",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。群馬県を拠点に、粘り強い戦いを見せるチームです。"
+  },
+  {
+    "id": 57,
+    "league": "J3",
+    "club": "栃木シティFC",
+    "stadiumName": "栃木市総合運動公園陸上競技場",
+    "officialUrl": "https://example.com/club/57",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。地域密着のクラブとして、ステップアップを目指しています。"
+  },
+  {
+    "id": 58,
+    "league": "J3",
+    "club": "栃木SC",
+    "stadiumName": "カンセキスタジアムとちぎ",
+    "officialUrl": "https://example.com/club/58",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。新しいスタジアムを拠点に、クラブとしての飛躍を目指しています。"
+  },
+  {
+    "id": 59,
+    "league": "J3",
+    "club": "ヴァンラーレ八戸",
+    "stadiumName": "プライフーズスタジアム",
+    "officialUrl": "https://example.com/club/59",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。東北地方のクラブとして、地元に根ざした活動を続けています。"
+  },
+  {
+    "id": 60,
+    "league": "J3",
+    "club": "ツエーゲン金沢",
+    "stadiumName": "金沢ゴーゴーカレースタジアム",
+    "officialUrl": "https://example.com/club/60",
+    "logo": "img/placeholder-logo.svg",
+    "description": "J3リーグに所属するクラブ。新スタジアムを本拠地に、クラブとしての新たなステージに挑んでいます。"
+  }
+]

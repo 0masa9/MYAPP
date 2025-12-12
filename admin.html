@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>管理者ダッシュボード | Jリーグ スタジアムマップ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Jリーグ スタジアムマップ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNav" aria-controls="adminNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="adminNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">地図</a></li>
+          <li class="nav-item"><a class="nav-link" href="rankings.html">順位表</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">管理ダッシュボード</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <span class="text-light-50 small">ユーザー: admin</span>
+          <button id="logoutButton" type="button" class="btn btn-outline-light btn-sm">ログアウト</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <h1 class="h4 mb-0">管理者ダッシュボード</h1>
+      <div class="d-flex align-items-center gap-2">
+        <span class="text-muted small">フロントのみでデータ操作（保存は手動コピー）</span>
+        <button id="reloadDataButton" type="button" class="btn btn-outline-dark btn-sm">データ再読込</button>
+      </div>
+    </div>
+
+    <ul class="nav nav-tabs mb-3" id="adminTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab-league" data-bs-toggle="tab" data-bs-target="#pane-league" type="button" role="tab">リーグ変更</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-team" data-bs-toggle="tab" data-bs-target="#pane-team" type="button" role="tab">チーム情報更新</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-results" data-bs-toggle="tab" data-bs-target="#pane-results" type="button" role="tab">勝敗登録</button>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="pane-league" role="tabpanel" aria-labelledby="tab-league">
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <h2 class="h5 mb-3">チームの所属リーグ変更</h2>
+            <form id="leagueForm" class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label">クラブ選択</label>
+                <select id="leagueClubSelect" class="form-select" required></select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">新しいリーグ</label>
+                <select id="leagueSelect" class="form-select" required>
+                  <option value="J1">J1</option>
+                  <option value="J2">J2</option>
+                  <option value="J3">J3</option>
+                </select>
+              </div>
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary">変更を適用</button>
+              </div>
+            </form>
+            <p class="text-muted small mt-2 mb-0">※ 実ファイルは書き換えられないため、下の JSON をコピペして stadiums.json / teams.json を手動更新してください。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pane-team" role="tabpanel" aria-labelledby="tab-team">
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <h2 class="h5 mb-3">チーム情報更新</h2>
+            <form id="teamForm" class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label">クラブ選択</label>
+                <select id="teamSelect" class="form-select" required></select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">クラブ名</label>
+                <input type="text" id="clubNameInput" class="form-control" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">スタジアム名</label>
+                <input type="text" id="stadiumNameInput" class="form-control" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">ロゴURL</label>
+                <input type="text" id="logoInput" class="form-control" placeholder="img/club-<id>.png">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">公式サイトURL</label>
+                <input type="url" id="officialUrlInput" class="form-control" placeholder="https://...">
+              </div>
+              <div class="col-12">
+                <label class="form-label">紹介文</label>
+                <textarea id="descriptionInput" class="form-control" rows="3" placeholder="クラブ紹介文を入力"></textarea>
+              </div>
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary">保存（プレビュー更新）</button>
+              </div>
+            </form>
+            <p class="text-muted small mt-2 mb-0">※ 手元の teams.json / stadiums.json を更新する際はプレビューを利用してください。</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <h2 class="h6 mb-3">チーム追加 / 削除（J3の入れ替えなど）</h2>
+            <form id="addTeamForm" class="row g-3">
+              <div class="col-12 col-md-4">
+                <label class="form-label">新規ID</label>
+                <input type="number" id="newTeamId" class="form-control" placeholder="例: 61" required>
+              </div>
+              <div class="col-12 col-md-4">
+                <label class="form-label">リーグ</label>
+                <select id="newTeamLeague" class="form-select" required>
+                  <option value="J1">J1</option>
+                  <option value="J2">J2</option>
+                  <option value="J3">J3</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-4">
+                <label class="form-label">クラブ名</label>
+                <input type="text" id="newTeamName" class="form-control" placeholder="新クラブ名" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">スタジアム名</label>
+                <input type="text" id="newStadiumName" class="form-control" placeholder="新スタジアム名" required>
+              </div>
+              <div class="col-12 col-md-3">
+                <label class="form-label">緯度</label>
+                <input type="number" step="0.000001" id="newLat" class="form-control" placeholder="35.0" required>
+              </div>
+              <div class="col-12 col-md-3">
+                <label class="form-label">経度</label>
+                <input type="number" step="0.000001" id="newLng" class="form-control" placeholder="139.0" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">ロゴURL</label>
+                <input type="text" id="newLogo" class="form-control" placeholder="img/club-<id>.png">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">公式サイトURL</label>
+                <input type="url" id="newOfficial" class="form-control" placeholder="https://...">
+              </div>
+              <div class="col-12">
+                <label class="form-label">紹介文</label>
+                <textarea id="newDescription" class="form-control" rows="2" placeholder="紹介文（任意）"></textarea>
+              </div>
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-success">チーム追加</button>
+              </div>
+            </form>
+
+            <hr>
+            <form id="deleteTeamForm" class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label">削除するチームID</label>
+                <input type="number" id="deleteTeamId" class="form-control" placeholder="IDを入力" required>
+              </div>
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-outline-danger">チーム削除</button>
+              </div>
+            </form>
+            <p class="text-muted small mt-2 mb-0">※ 追加・削除後はプレビューをコピペしてファイルを更新してください。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pane-results" role="tabpanel" aria-labelledby="tab-results">
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <h2 class="h5 mb-3">勝敗登録（rankings.json を更新）</h2>
+            <form id="resultForm" class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label">ホームクラブ</label>
+                <select id="homeClubSelect" class="form-select" required></select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">アウェイクラブ</label>
+                <select id="awayClubSelect" class="form-select" required></select>
+              </div>
+              <div class="col-6 col-md-3">
+                <label class="form-label">ホーム得点</label>
+                <input type="number" min="0" id="homeScoreInput" class="form-control" value="0" required>
+              </div>
+              <div class="col-6 col-md-3">
+                <label class="form-label">アウェイ得点</label>
+                <input type="number" min="0" id="awayScoreInput" class="form-control" value="0" required>
+              </div>
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary">登録して順位データ更新</button>
+              </div>
+            </form>
+            <p class="text-muted small mt-2 mb-0">※ 更新後の rankings.json を下部プレビューからコピーして差し替えてください。</p>
+            <div class="mt-3">
+              <button id="syncRankingsButton" type="button" class="btn btn-outline-secondary btn-sm">
+                全リーグの全クラブを順位表に反映（不足エントリを0で追加）
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-muted mt-3">
+      <h3 class="h6 mb-2">JSONプレビュー（手動でファイル更新してください）</h3>
+      <div class="row g-3">
+        <div class="col-12 col-lg-4">
+          <h6 class="mb-1">stadiums.json</h6>
+          <pre id="stadiumsPreview" class="json-preview"></pre>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h6 class="mb-1">teams.json</h6>
+          <pre id="teamsPreview" class="json-preview"></pre>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h6 class="mb-1">rankings.json</h6>
+          <pre id="rankingsPreview" class="json-preview"></pre>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="shared.js"></script>
+  <script src="auth.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

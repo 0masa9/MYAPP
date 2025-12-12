@@ -1,5 +1,13 @@
 // main.js
 document.addEventListener("DOMContentLoaded", () => {
+  // リーグごとの色設定をまとめたオブジェクト（リーグが増えてもここを増やすだけ）
+  const leagueStyles = {
+    J1: { label: "J1", color: "#d81b60", fillColor: "#e53935" }, // 赤系
+    J2: { label: "J2", color: "#1565c0", fillColor: "#1e88e5" }, // 青系
+    J3: { label: "J3", color: "#2e7d32", fillColor: "#43a047" }, // 緑系
+    default: { label: "その他", color: "#6c757d", fillColor: "#adb5bd" }
+  };
+
   // 地図初期化（日本の真ん中あたり）
   const map = L.map("map").setView([36.2048, 138.2529], 5);
 
@@ -56,17 +64,31 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(data => {
       data.forEach(stadium => {
-        const { league, club, stadiumName, lat, lng } = stadium;
+        const { id, league, club, stadiumName, lat, lng } = stadium;
 
-        const marker = L.marker([lat, lng], { title: club });
+        // リーグに応じた色を設定
+        const style = leagueStyles[league] || leagueStyles.default;
+        const marker = L.circleMarker([lat, lng], {
+          radius: 9,
+          color: style.color,
+          fillColor: style.fillColor,
+          fillOpacity: 0.9,
+          weight: 2,
+          title: club
+        });
 
+        // ポップアップとクリック遷移
         marker.bindPopup(`
           <div>
             <strong>${club}</strong><br>
             ${stadiumName}<br>
-            <span class="badge bg-secondary">${league}</span>
+            <span class="badge" style="background-color:${style.color}">${league}</span>
           </div>
         `);
+        marker.on("click", () => {
+          // チーム詳細ページへ遷移
+          window.location.href = `team.html?id=${encodeURIComponent(id)}`;
+        });
 
         markers.push({
           league,
@@ -76,6 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 初回フィルタ
       updateMarkers();
+
+      // 凡例を地図に追加
+      addLeagueLegend();
     })
     .catch(error => {
       console.error(error);
@@ -85,5 +110,29 @@ document.addEventListener("DOMContentLoaded", () => {
   [filterJ1, filterJ2, filterJ3].forEach(input => {
     input.addEventListener("change", updateMarkers);
   });
-});
 
+  // 地図右下にリーグ凡例を追加する
+  function addLeagueLegend() {
+    const legend = L.control({ position: "bottomright" });
+    legend.onAdd = function () {
+      const div = L.DomUtil.create("div", "league-legend");
+      div.innerHTML = "<h6 class='mb-1'>リーグ凡例</h6>";
+
+      Object.keys(leagueStyles)
+        .filter(key => key !== "default")
+        .forEach(key => {
+          const style = leagueStyles[key];
+          const item = document.createElement("div");
+          item.className = "legend-item";
+          item.innerHTML = `
+            <span class="legend-color" style="background:${style.color}"></span>
+            <span class="legend-label">${style.label}</span>
+          `;
+          div.appendChild(item);
+        });
+      return div;
+    };
+
+    legend.addTo(map);
+  }
+});

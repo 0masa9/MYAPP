@@ -1,0 +1,11 @@
+{
+  "J1": [
+    { "rank": 1, "clubId": 1, "points": 70 },
+    { "rank": 2, "clubId": 2, "points": 65 },
+    { "rank": 3, "clubId": 3, "points": 60 }
+  ],
+  "J2": [
+    { "rank": 1, "clubId": 25, "points": 68 }
+  ],
+  "J3": []
+}

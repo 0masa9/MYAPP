@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "league": "J1",
+    "club": "鹿島アントラーズ",
+    "stadiumName": "カシマサッカースタジアム",
+    "officialUrl": "https://example.com/club/1",
+    "logo": "img/club-1.png",
+    "description": "鹿島アントラーズはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 2,
+    "league": "J1",
+    "club": "浦和レッドダイヤモンズ",
+    "stadiumName": "埼玉スタジアム2002",
+    "officialUrl": "https://example.com/club/2",
+    "logo": "img/club-2.png",
+    "description": "浦和レッドダイヤモンズはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 3,
+    "league": "J1",
+    "club": "柏レイソル",
+    "stadiumName": "三協フロンテア柏スタジアム",
+    "officialUrl": "https://example.com/club/3",
+    "logo": "img/club-3.png",
+    "description": "柏レイソルはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 4,
+    "league": "J1",
+    "club": "FC東京",
+    "stadiumName": "味の素スタジアム",
+    "officialUrl": "https://example.com/club/4",
+    "logo": "img/club-4.png",
+    "description": "FC東京はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 5,
+    "league": "J1",
+    "club": "東京ヴェルディ",
+    "stadiumName": "味の素スタジアム",
+    "officialUrl": "https://example.com/club/5",
+    "logo": "img/club-5.png",
+    "description": "東京ヴェルディはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 6,
+    "league": "J1",
+    "club": "FC町田ゼルビア",
+    "stadiumName": "町田GIONスタジアム",
+    "officialUrl": "https://example.com/club/6",
+    "logo": "img/club-6.png",
+    "description": "FC町田ゼルビアはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 7,
+    "league": "J1",
+    "club": "川崎フロンターレ",
+    "stadiumName": "Uvanceとどろきスタジアム by Fujitsu",
+    "officialUrl": "https://example.com/club/7",
+    "logo": "img/club-7.png",
+    "description": "川崎フロンターレはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 8,
+    "league": "J1",
+    "club": "横浜F・マリノス",
+    "stadiumName": "日産スタジアム",
+    "officialUrl": "https://example.com/club/8",
+    "logo": "img/club-8.png",
+    "description": "横浜F・マリノスはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 9,
+    "league": "J1",
+    "club": "横浜FC",
+    "stadiumName": "ニッパツ三ツ沢球技場",
+    "officialUrl": "https://example.com/club/9",
+    "logo": "img/club-9.png",
+    "description": "横浜FCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 10,
+    "league": "J1",
+    "club": "湘南ベルマーレ",
+    "stadiumName": "レモンガススタジアム平塚",
+    "officialUrl": "https://example.com/club/10",
+    "logo": "img/club-10.png",
+    "description": "湘南ベルマーレはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 11,
+    "league": "J1",
+    "club": "アルビレックス新潟",
+    "stadiumName": "デンカビッグスワンスタジアム",
+    "officialUrl": "https://example.com/club/11",
+    "logo": "img/club-11.png",
+    "description": "アルビレックス新潟はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 12,
+    "league": "J1",
+    "club": "清水エスパルス",
+    "stadiumName": "IAIスタジアム日本平",
+    "officialUrl": "https://example.com/club/12",
+    "logo": "img/club-12.png",
+    "description": "清水エスパルスはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 13,
+    "league": "J1",
+    "club": "名古屋グランパス",
+    "stadiumName": "豊田スタジアム",
+    "officialUrl": "https://example.com/club/13",
+    "logo": "img/club-13.png",
+    "description": "名古屋グランパスはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 14,
+    "league": "J1",
+    "club": "京都サンガF.C.",
+    "stadiumName": "サンガスタジアム by Kyocera",
+    "officialUrl": "https://example.com/club/14",
+    "logo": "img/club-14.png",
+    "description": "京都サンガF.C.はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 15,
+    "league": "J1",
+    "club": "ガンバ大阪",
+    "stadiumName": "パナソニックスタジアム吹田",
+    "officialUrl": "https://example.com/club/15",
+    "logo": "img/club-15.png",
+    "description": "ガンバ大阪はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 16,
+    "league": "J1",
+    "club": "セレッソ大阪",
+    "stadiumName": "ヨドコウ桜スタジアム",
+    "officialUrl": "https://example.com/club/16",
+    "logo": "img/club-16.png",
+    "description": "セレッソ大阪はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 17,
+    "league": "J1",
+    "club": "ヴィッセル神戸",
+    "stadiumName": "ノエビアスタジアム神戸",
+    "officialUrl": "https://example.com/club/17",
+    "logo": "img/club-17.png",
+    "description": "ヴィッセル神戸はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 18,
+    "league": "J1",
+    "club": "ファジアーノ岡山",
+    "stadiumName": "JFEハレノミヤスタジアム",
+    "officialUrl": "https://example.com/club/18",
+    "logo": "img/club-18.png",
+    "description": "ファジアーノ岡山はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 19,
+    "league": "J1",
+    "club": "サンフレッチェ広島",
+    "stadiumName": "エディオンピースウイング広島",
+    "officialUrl": "https://example.com/club/19",
+    "logo": "img/club-19.png",
+    "description": "サンフレッチェ広島はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 20,
+    "league": "J1",
+    "club": "アビスパ福岡",
+    "stadiumName": "ベスト電器スタジアム",
+    "officialUrl": "https://example.com/club/20",
+    "logo": "img/club-20.png",
+    "description": "アビスパ福岡はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 21,
+    "league": "J2",
+    "club": "ブラウブリッツ秋田",
+    "stadiumName": "ソユースタジアム",
+    "officialUrl": "https://example.com/club/21",
+    "logo": "img/club-21.png",
+    "description": "ブラウブリッツ秋田はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 22,
+    "league": "J2",
+    "club": "愛媛FC",
+    "stadiumName": "ニンジニアスタジアム",
+    "officialUrl": "https://example.com/club/22",
+    "logo": "img/club-22.png",
+    "description": "愛媛FCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 23,
+    "league": "J2",
+    "club": "藤枝MYFC",
+    "stadiumName": "藤枝総合運動公園サッカー場",
+    "officialUrl": "https://example.com/club/23",
+    "logo": "img/club-23.png",
+    "description": "藤枝MYFCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 24,
+    "league": "J2",
+    "club": "北海道コンサドーレ札幌",
+    "stadiumName": "札幌ドーム",
+    "officialUrl": "https://example.com/club/24",
+    "logo": "img/club-24.png",
+    "description": "北海道コンサドーレ札幌はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 25,
+    "league": "J2",
+    "club": "FC今治",
+    "stadiumName": "アシックス里山スタジアム",
+    "officialUrl": "https://example.com/club/25",
+    "logo": "img/club-25.png",
+    "description": "FC今治はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 26,
+    "league": "J2",
+    "club": "いわきFC",
+    "stadiumName": "ハワイアンズスタジアムいわき",
+    "officialUrl": "https://example.com/club/26",
+    "logo": "img/club-26.png",
+    "description": "いわきFCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 27,
+    "league": "J2",
+    "club": "ジェフユナイテッド市原・千葉",
+    "stadiumName": "フクダ電子アリーナ",
+    "officialUrl": "https://example.com/club/27",
+    "logo": "img/club-27.png",
+    "description": "ジェフユナイテッド市原・千葉はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 28,
+    "league": "J2",
+    "club": "ジュビロ磐田",
+    "stadiumName": "ヤマハスタジアム",
+    "officialUrl": "https://example.com/club/28",
+    "logo": "img/club-28.png",
+    "description": "ジュビロ磐田はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 29,
+    "league": "J2",
+    "club": "カターレ富山",
+    "stadiumName": "富山県総合運動公園陸上競技場",
+    "officialUrl": "https://example.com/club/29",
+    "logo": "img/club-29.png",
+    "description": "カターレ富山はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 30,
+    "league": "J2",
+    "club": "水戸ホーリーホック",
+    "stadiumName": "ケーズデンキスタジアム水戸",
+    "officialUrl": "https://example.com/club/30",
+    "logo": "img/club-30.png",
+    "description": "水戸ホーリーホックはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 31,
+    "league": "J2",
+    "club": "モンテディオ山形",
+    "stadiumName": "NDソフトスタジアム山形",
+    "officialUrl": "https://example.com/club/31",
+    "logo": "img/club-31.png",
+    "description": "モンテディオ山形はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 32,
+    "league": "J2",
+    "club": "大分トリニータ",
+    "stadiumName": "レゾナックドーム大分",
+    "officialUrl": "https://example.com/club/32",
+    "logo": "img/club-32.png",
+    "description": "大分トリニータはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 33,
+    "league": "J2",
+    "club": "大宮アルディージャ",
+    "stadiumName": "NACK5スタジアム大宮",
+    "officialUrl": "https://example.com/club/33",
+    "logo": "img/club-33.png",
+    "description": "大宮アルディージャはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 34,
+    "league": "J2",
+    "club": "レノファ山口FC",
+    "stadiumName": "維新みらいふスタジアム",
+    "officialUrl": "https://example.com/club/34",
+    "logo": "img/club-34.png",
+    "description": "レノファ山口FCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 35,
+    "league": "J2",
+    "club": "ロアッソ熊本",
+    "stadiumName": "えがお健康スタジアム",
+    "officialUrl": "https://example.com/club/35",
+    "logo": "img/club-35.png",
+    "description": "ロアッソ熊本はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 36,
+    "league": "J2",
+    "club": "サガン鳥栖",
+    "stadiumName": "駅前不動産スタジアム",
+    "officialUrl": "https://example.com/club/36",
+    "logo": "img/club-36.png",
+    "description": "サガン鳥栖はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 37,
+    "league": "J2",
+    "club": "徳島ヴォルティス",
+    "stadiumName": "鳴門・大塚スポーツパーク ポカリスエットスタジアム",
+    "officialUrl": "https://example.com/club/37",
+    "logo": "img/club-37.png",
+    "description": "徳島ヴォルティスはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 38,
+    "league": "J2",
+    "club": "V・ファーレン長崎",
+    "stadiumName": "PEACE STADIUM Connected by SoftBank",
+    "officialUrl": "https://example.com/club/38",
+    "logo": "img/club-38.png",
+    "description": "V・ファーレン長崎はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 39,
+    "league": "J2",
+    "club": "ベガルタ仙台",
+    "stadiumName": "ユアテックスタジアム仙台",
+    "officialUrl": "https://example.com/club/39",
+    "logo": "img/club-39.png",
+    "description": "ベガルタ仙台はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 40,
+    "league": "J2",
+    "club": "ヴァンフォーレ甲府",
+    "stadiumName": "JITリサイクルインクスタジアム",
+    "officialUrl": "https://example.com/club/40",
+    "logo": "img/club-40.png",
+    "description": "ヴァンフォーレ甲府はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 41,
+    "league": "J3",
+    "club": "アスルクラロ沼津",
+    "stadiumName": "愛鷹広域公園多目的競技場",
+    "officialUrl": "https://example.com/club/41",
+    "logo": "img/club-41.png",
+    "description": "アスルクラロ沼津はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 42,
+    "league": "J3",
+    "club": "福島ユナイテッドFC",
+    "stadiumName": "とうほう・みんなのスタジアム",
+    "officialUrl": "https://example.com/club/42",
+    "logo": "img/club-42.png",
+    "description": "福島ユナイテッドFCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 43,
+    "league": "J3",
+    "club": "ガイナーレ鳥取",
+    "stadiumName": "Axisバードスタジアム",
+    "officialUrl": "https://example.com/club/43",
+    "logo": "img/club-43.png",
+    "description": "ガイナーレ鳥取はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 44,
+    "league": "J3",
+    "club": "FC岐阜",
+    "stadiumName": "岐阜メモリアルセンター長良川競技場",
+    "officialUrl": "https://example.com/club/44",
+    "logo": "img/club-44.png",
+    "description": "FC岐阜はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 45,
+    "league": "J3",
+    "club": "ギラヴァンツ北九州",
+    "stadiumName": "ミクニワールドスタジアム北九州",
+    "officialUrl": "https://example.com/club/45",
+    "logo": "img/club-45.png",
+    "description": "ギラヴァンツ北九州はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 46,
+    "league": "J3",
+    "club": "鹿児島ユナイテッドFC",
+    "stadiumName": "白波スタジアム",
+    "officialUrl": "https://example.com/club/46",
+    "logo": "img/club-46.png",
+    "description": "鹿児島ユナイテッドFCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 47,
+    "league": "J3",
+    "club": "カマタマーレ讃岐",
+    "stadiumName": "ピカラスタジアム",
+    "officialUrl": "https://example.com/club/47",
+    "logo": "img/club-47.png",
+    "description": "カマタマーレ讃岐はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 48,
+    "league": "J3",
+    "club": "高知ユナイテッドSC",
+    "stadiumName": "高知県立春野総合運動公園陸上競技場",
+    "officialUrl": "https://example.com/club/48",
+    "logo": "img/club-48.png",
+    "description": "高知ユナイテッドSCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 49,
+    "league": "J3",
+    "club": "松本山雅FC",
+    "stadiumName": "サンプロ アルウィン",
+    "officialUrl": "https://example.com/club/49",
+    "logo": "img/club-49.png",
+    "description": "松本山雅FCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 50,
+    "league": "J3",
+    "club": "AC長野パルセイロ",
+    "stadiumName": "長野Uスタジアム",
+    "officialUrl": "https://example.com/club/50",
+    "logo": "img/club-50.png",
+    "description": "AC長野パルセイロはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 51,
+    "league": "J3",
+    "club": "奈良クラブ",
+    "stadiumName": "ロートフィールド奈良",
+    "officialUrl": "https://example.com/club/51",
+    "logo": "img/club-51.png",
+    "description": "奈良クラブはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 52,
+    "league": "J3",
+    "club": "FC大阪",
+    "stadiumName": "東大阪市花園ラグビー場",
+    "officialUrl": "https://example.com/club/52",
+    "logo": "img/club-52.png",
+    "description": "FC大阪はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 53,
+    "league": "J3",
+    "club": "FC琉球",
+    "stadiumName": "タピック県総ひやごんスタジアム",
+    "officialUrl": "https://example.com/club/53",
+    "logo": "img/club-53.png",
+    "description": "FC琉球はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 54,
+    "league": "J3",
+    "club": "SC相模原",
+    "stadiumName": "相模原ギオンスタジアム",
+    "officialUrl": "https://example.com/club/54",
+    "logo": "img/club-54.png",
+    "description": "SC相模原はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 55,
+    "league": "J3",
+    "club": "テゲバジャーロ宮崎",
+    "stadiumName": "いちご宮崎新富サッカー場",
+    "officialUrl": "https://example.com/club/55",
+    "logo": "img/club-55.png",
+    "description": "テゲバジャーロ宮崎はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 56,
+    "league": "J3",
+    "club": "ザスパ群馬",
+    "stadiumName": "正田醤油スタジアム群馬",
+    "officialUrl": "https://example.com/club/56",
+    "logo": "img/club-56.png",
+    "description": "ザスパ群馬はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 57,
+    "league": "J3",
+    "club": "栃木シティ",
+    "stadiumName": "CITY FOOTBALL STATION",
+    "officialUrl": "https://example.com/club/57",
+    "logo": "img/club-57.png",
+    "description": "栃木シティはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 58,
+    "league": "J3",
+    "club": "栃木SC",
+    "stadiumName": "カンセキスタジアムとちぎ",
+    "officialUrl": "https://example.com/club/58",
+    "logo": "img/club-58.png",
+    "description": "栃木SCはJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 59,
+    "league": "J3",
+    "club": "ヴァンラーレ八戸",
+    "stadiumName": "プライフーズスタジアム",
+    "officialUrl": "https://example.com/club/59",
+    "logo": "img/club-59.png",
+    "description": "ヴァンラーレ八戸はJリーグクラブです。ここに紹介文を追記してください。"
+  },
+  {
+    "id": 60,
+    "league": "J3",
+    "club": "ツエーゲン金沢",
+    "stadiumName": "金沢ゴーゴーカレースタジアム",
+    "officialUrl": "https://example.com/club/60",
+    "logo": "img/club-60.png",
+    "description": "ツエーゲン金沢はJリーグクラブです。ここに紹介文を追記してください。"
+  }
+]

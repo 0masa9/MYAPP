@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Jリーグ スタジアムマップ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+
+  <!-- Leaflet CSS (地図ライブラリ) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <!-- 自作CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ナビバー -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Jリーグ スタジアムマップ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">地図</a></li>
+          <li class="nav-item"><a class="nav-link" href="rankings.html">順位表</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <button id="refreshButton" type="button" class="btn btn-outline-light btn-sm">
+            データ再読込
+          </button>
+          <!-- J1/J2/J3 フィルター -->
+          <div class="btn-group me-3" role="group" aria-label="League filter">
+            <input type="checkbox" class="btn-check" id="filterJ1" checked>
+            <label class="btn btn-outline-light btn-sm" for="filterJ1">J1</label>
+
+            <input type="checkbox" class="btn-check" id="filterJ2" checked>
+            <label class="btn btn-outline-light btn-sm" for="filterJ2">J2</label>
+
+            <input type="checkbox" class="btn-check" id="filterJ3" checked>
+            <label class="btn btn-outline-light btn-sm" for="filterJ3">J3</label>
+          </div>
+          <button id="adminButton" type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
+            管理者ログイン
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 地図エリア -->
+  <div id="map"></div>
+
+  <!-- 管理者ログインモーダル -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">管理者ログイン</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">ユーザー名</label>
+              <input type="text" class="form-control" id="username" name="username" placeholder="admin" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">パスワード</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="0000" required>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">ログイン</button>
+            </div>
+          </form>
+          <p class="text-muted small mb-0 mt-2">※ 簡易認証 (ユーザー: admin / パスワード: 0000)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (オプション) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  ></script>
+
+  <!-- 自作JS -->
+  <script src="shared.js"></script>
+  <script src="auth.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
