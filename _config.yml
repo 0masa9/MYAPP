@@ -1,0 +1,13 @@
+exclude:
+  - backend
+  - frontend
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - pnpm-lock.yaml
+  - eval "$(ssh-agent -s)"
+  - "**/node_modules/**"
